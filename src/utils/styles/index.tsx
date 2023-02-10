@@ -36,6 +36,12 @@ export const Button = styled.button`
     font-size: 16px;
     border-radius: 10px;
     padding: 25px;
+    transition: 300ms background-color ease;
+    type: submit;
+    &:hover {
+        cursor: pointer;
+        background-color: #5e45ff;
+    }
 `;
 
 
