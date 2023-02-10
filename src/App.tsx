@@ -1,10 +1,11 @@
 import { Outlet, Route, Routes } from 'react-router-dom';
+import { AuthenticationPage } from './pages/RegisterPage';
 
 function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<div>Hello, Home!</div>}></Route>
+        <Route path="/" element={<AuthenticationPage />}></Route>
         <Route
           path="conversations"
           element={
