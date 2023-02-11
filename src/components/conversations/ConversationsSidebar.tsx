@@ -1,5 +1,5 @@
 import { FC } from "react"
-import { ConversationSidebarContainer, ConversationSidebarItem, ConversationSidebarStyle } from "../../utils/styles"
+import { ConversationSidebarContainer, ConversationSidebarHeader, ConversationSidebarItem, ConversationSidebarStyle } from "../../utils/styles"
 import { MdEdit } from "react-icons/md"
 import { ConversationType } from "../../utils/types"
 import styles from "./index.module.scss";
@@ -9,10 +9,10 @@ type Props = {
 
 export const ConversationSidebar: FC<Props> = ({ conversations }) => {
     return <ConversationSidebarStyle>
-        <header>
+        <ConversationSidebarHeader>
             <h1>Conversations</h1>
             <MdEdit size={30} />
-        </header>
+        </ConversationSidebarHeader>
         <ConversationSidebarContainer>
             {conversations.map((conversation) => (
                 <ConversationSidebarItem>
