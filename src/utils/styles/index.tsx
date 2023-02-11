@@ -51,7 +51,7 @@ export const Button = styled.button`
 export const Page = styled.div<PageProps>`
     height: 100%;
     display: ${(props) => props.display};
-    justify-content: ${(props) => props.justifyContents};
+    justify-content: ${(props) => props.justifyContent};
     align-items: ${(props) => props.alignItems};
     background-color: #1a1a1a;
     `;
@@ -73,6 +73,15 @@ export const ConversationSidebarStyle = styled.aside`
         background-color: #141414;
         height: 100px;
     }
+`;
+export const ConversationSidebarItem = styled.div`
+    display: flex;
+    align-items: center;
+    gap: 20px;
+`;
+
+export const ConversationSidebarContainer = styled.div`
+
 `;
 
 

@@ -1,5 +1,5 @@
 export type PageProps = Partial<{
     display: string;
-    justifyContents: string;
+    justifyContent: string;
     alignItems: string;
 }>

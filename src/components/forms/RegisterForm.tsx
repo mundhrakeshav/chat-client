@@ -4,18 +4,12 @@ import styles from "./index.module.scss"
 import { useForm } from "react-hook-form";
 
 export const RegisterForm = () => {
-
     const onSubmit = (data: any) => {
         alert(JSON.stringify(data));
-
     };
     const onError = (data: any) => {
         console.log(data);
-
     };
-
-    
-    
     const { register, handleSubmit, formState: { errors } } = useForm();
     console.log(errors);
 
